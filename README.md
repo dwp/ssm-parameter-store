@@ -1,7 +1,7 @@
 # ssm-parameter-store
 We want to be able to version control, and review private (and potentially secret) data. e.g. the private data stored in SSM's parameter store.  
 
-This repo is a test using `git-secret` and some identically formatted sample data, in order to achieve this.  The data is encrypted, using a keyring containing the current team members public keys.  This currently allows these members (`git secret whoknows`) to decrypt, edit, and encrypt the data we intend to be private(secret).
+This repo is a test using [git-secret](https://git-secret.io) and some identically formatted sample data, in order to achieve this.  The data is encrypted, using a keyring containing the current team members public keys.  This currently allows these members (`git secret whoknows`) to decrypt, edit, and encrypt the data we intend to be private(secret).
 
 
 ## Required
