@@ -16,8 +16,8 @@ shopt -s nullglob
 if [ $count != 0 ]; then
     for f in $FILES
     do
-      GPG_EMAIL=$(gpg $f | grep -o -P '(?<=<).*(?=>)')
-      gpg --import $f \
-      && git secret tell $GPG_EMAIL
+        GPG_EMAIL=$(gpg $f 2> /dev/null | perl -ne 'print "$1\n" if (/<([^>+]+)>/)')
+        gpg --import $f \
+        && git secret tell $GPG_EMAIL
     done
 fi
