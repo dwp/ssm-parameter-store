@@ -27,11 +27,11 @@ docker build -t dwpdigital/secret-builder:0.0.1 .
 ```  
 
 ```
-docker run -it -v ~/.ssh/id_rsa:/root/.ssh/id_rsa -v ~/.ssh/id_rsa.pub:/root/.ssh/id_rsa.pub -v ~/.gnupg/:/root/.gnupg -e GIT_USERNAME='Your Name' -e GIT_EMAIL=your.name@email.com dwpdigital/secret-builder:0.0.2
+docker run -it -v ~/.ssh/id_rsa:/root/.ssh/id_rsa -v ~/.ssh/id_rsa.pub:/root/.ssh/id_rsa.pub -v ~/.gnupg/:/root/.gnupg -e GIT_USERNAME='Your Name' -e GIT_EMAIL=your.name@email.com dwpdigital/secret-builder:0.0.1
 ```  
 
 ```
-git clone git@github.com:dwp/ssm-parameter-store.git
+git clone https://github.com/dwp/ssm-parameter-store.git
 cd ssm-parameter-store
 ```  
 
