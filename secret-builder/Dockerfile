@@ -17,7 +17,7 @@ RUN apk add bash \
 
 FROM SECRET as CERTS
 RUN echo | openssl s_client -showcerts -servername server -connect github.com:443 > /usr/local/share/ca-certificates/cacert.pem \
-&& update-ca-certificates 2>&1 > /dev/null
+    && update-ca-certificates 2>&1 > /dev/null
 
 FROM CERTS
 
