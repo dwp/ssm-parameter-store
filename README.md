@@ -17,6 +17,12 @@ You can make changes and then reseal with:
 
 the `-d` deletes the plain text version of the file you edited.
 
+### Add keys
+
+The `add-key` script is for use on first 'seal' when creating a new repository.  It's design is to pull pubkeys from a known repo, add add them to the pubkeyring of the repo.
+
+If you have already commited files to be encrypted by git-secrets, you should `reveal` and `hide` your secrets, to allow everyone in the keyring to do the same.  Otherwise you can seal new files.
+
 ## Secret-Builder
 Locally built & ran Docker container, that improves the usage of this format for some users.  
 
