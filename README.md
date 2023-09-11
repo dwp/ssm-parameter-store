@@ -1,3 +1,6 @@
+# DO NOT USE THIS REPO - MIGRATED TO GITLAB
+
+
 # ssm-parameter-store
 We want to be able to version control, and review private (and potentially secret) data. e.g. the private data stored in SSM's parameter store.  
 
